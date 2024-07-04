@@ -28,7 +28,7 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                 name: Test File
-                path: test.txt
+                
             - name: Access File
               run: cat test.txt
 
