@@ -12,3 +12,12 @@ jobs:
           run: ls
         - name: Read file
           run: cat README.md
+        - name: Create file
+          run: touch test.txt
+        - name: Upload artifact
+          uses: actions/upload-artifact@v4
+          with: 
+            name: Test File
+            path: test.txt
+
+          
